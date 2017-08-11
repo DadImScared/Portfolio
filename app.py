@@ -1,15 +1,25 @@
 from flask import Flask, render_template, redirect, url_for, request, flash
 from flask_mail import Mail, Message
+from flask_sslify import SSLify
 from threading import Thread
 from forms import ContactForm
 import config
 
 app = Flask(__name__)
 app.secret_key = config.SECRET_KEY
+if config.DEBUG:
+    app.config['MAIL_PORT'] = 465
+    app.config['MAIL_USE_TLS'] = False
+    app.config['MAIL_USE_SSL'] = True
+    app.config['MAIL_DEBUG'] = True
+else:
+    app.config['MAIL_PORT'] = 587
+    app.config['MAIL_USE_TLS'] = True
+    app.config['MAIL_USE_SSL'] = False
+    app.config['MAIL_DEBUG'] = False
+    sslify = SSLify(app)
+
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
-app.config['MAIL_PORT'] = 465
-app.config['MAIL_USE_TLS'] = False
-app.config['MAIL_USE_SSL'] = True
 app.config["MAIL_USERNAME"] = config.SENDER_EMAIL
 app.config["MAIL_PASSWORD"] = config.SENDER_PASS
 app.config["MAIL_DEFAULT_SENDER"] = config.SENDER_EMAIL
@@ -55,4 +65,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(debug=config.DEBUG)
