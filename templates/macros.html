@@ -1,0 +1,13 @@
+{% macro render_field(field) %}
+    {% if field.errors %}
+        {% for error in field.errors %}
+            <div class="form-group has-danger">
+            {{ field(placeholder=field.label.text, class_="form-control form-control-danger", **kwargs) | safe }}
+            <div class="form-control-feedback">{{ error }}</div>
+            </div>
+        {% endfor %}
+    {% else %}
+        <label class="sr-only" for="{{ field.id }}">{{ field.label.text }}:</label>
+        {{ field(placeholder=field.label.text, **kwargs) | safe }}
+    {% endif %}
+{% endmacro %}

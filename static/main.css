@@ -1,0 +1,202 @@
+
+html, body {
+    height: 100%;
+}
+
+body {
+    position: relative;
+}
+
+#intro {
+    background-color: #006989;
+    min-height: 100%;
+}
+
+.projects-wrapper {
+    background-color: #01A7C2;
+    padding-top: 2.5em;
+    padding-bottom: 5em;
+}
+
+#self-picture {
+    height: 75px;
+    width: 75px;
+    background-color: black;
+    margin: 0 auto;
+}
+
+.is-sticky > ul {
+
+    background-color: #006989;
+    /*border-bottom: solid 1px #5bc0de;*/
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 41, 0.6);
+}
+
+#navWrapper {
+    width: 100%;
+
+}
+
+.card-toggle {
+    color: #5bc0de;
+    background-color: transparent;
+    border: solid .1em #5bc0de;
+}
+
+.nav-link {
+    color: #75B9BE;
+}
+
+/* color class for Wild Blue Yonder */
+.color-wby {
+    color: #A3BAC3
+}
+
+/*******************************
+ Projects
+ *******************************/
+
+.project-thumbnail {
+    height: 19em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+
+.card {
+    height: 100%;
+    border: none;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.7);
+-moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.7);
+box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.7);
+}
+
+.back {
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.7);
+-moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.7);
+box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.7);
+    background-color: #006989;
+    color: #C1DFF0;
+}
+
+.js-list-item {
+
+}
+
+.project-thumbnail .row {
+    opacity: 0;
+}
+
+.card-header {
+    background-color: #004e70;
+    border-bottom: 1px solid #85C7F2;
+    color: #006989;
+}
+
+.card-block {
+    color: #C1DFF0;
+    background-color: #006989;
+}
+
+.card-footer {
+    background-color: #004e70;
+    border-top: 1px solid #85C7F2;
+}
+
+@-webkit-keyframes my-fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-moz-keyframes my-fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@-o-keyframes my-fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+@keyframes my-fade {
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.my-animation {
+    -webkit-animation: my-fade 1.3s ease-in; /* Safari 4+ */
+     -moz-animation: my-fade 1.3s ease-in; /* Fx 5+ */
+    -o-animation: my-fade 1.3s ease-in; /* Opera 12+ */
+     animation: my-fade 1.3s ease-in; /* IE 10+, Fx 29+ */
+    -webkit-animation-fill-mode: forwards, none;
+    -moz-animation-fill-mode: forwards, none;
+    -o-animation-fill-mode: forwards, none;
+    animation-fill-mode: forwards, none;
+}
+
+/*******************************
+Contact
+ *******************************/
+
+#contactWrapper {
+    background-color: #006989;
+}
+
+.large-area {
+    height: 150px;
+}
+
+/*******************************
+Footer
+ *******************************/
+
+.footer {
+    background-color: #01A7C2;
+    padding-top: 1.2em;
+    padding-bottom: 1.2em;
+    text-align:center;
+}
+
+.bounce {
+    color: #01A7C2;
+	-webkit-animation-name: bounce;
+	-moz-animation-name: bounce;
+	-o-animation-name: bounce;
+	animation-name: bounce;
+}
+.animated{-webkit-animation-fill-mode:both;
+-moz-animation-fill-mode:both;
+-ms-animation-fill-mode:both;
+-o-animation-fill-mode:both;
+
+            animation-iteration-count: infinite;
+       -moz-animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+
+animation-fill-mode:both;
+-webkit-animation-duration:2s;
+-moz-animation-duration:2s;
+-ms-animation-duration:2s;
+-o-animation-duration:2s;
+animation-duration:2s;
+}
+
+
+@-webkit-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}	40% {-webkit-transform: translateY(-30px);}
+	60% {-webkit-transform: translateY(-15px);}
+}
+
+@-moz-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+	40% {-moz-transform: translateY(-30px);}
+	60% {-moz-transform: translateY(-15px);}
+}
+
+@-o-keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+	40% {-o-transform: translateY(-30px);}
+	60% {-o-transform: translateY(-15px);}
+}
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+	40% {transform: translateY(-30px);}
+	60% {transform: translateY(-15px);}
+}

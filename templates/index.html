@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% from 'macros.html' import render_field %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/main.css">
+  </head>
+  <body data-spy="scroll" data-offset="10" data-target="#mavWrapper">
+  <!-- Intro  -->
+    <div id="intro" class="d-flex flex-column justify-content-around align-items-center">
+      <div class="pt-2 color-wby container text-center">
+        <div id="self-picture"></div>
+        <p class="text-center">Hi, I'm Matthew. I am a full stack developer from Gainesville, Florida.</p>
+        <h5 class="text-center pb-2">Technologies used: </h5>
+        <h6 class="text-center">Front-end: </h6>
+        <p class="text-center">JavaScript, React/Redux, jQuery, Bootstrap 3/4, HTML5, CSS3.</p>
+        <h6 class="text-center">Utility:</h6>
+        <p>Git, Webpack.</p>
+        <h6 class="text-center">Back-end: </h6>
+        <p class="text-center">SQL, Python, Flask, Jinja2, Peewee, Scrapy, Beautiful Soup.</p>
+      </div>
+      <div id="navWrapper">
+        <ul id="my-sticky-nav" class="nav justify-content-center nav-pills">
+          <li class="nav-item">
+            <a class="nav-link active" href="#intro">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <div id="arrowWrap"><i class="fa fa-3x animated bounce fa-chevron-down" aria-hidden="true"></i></div>
+    </div>
+  <!-- /Into -->
+  <!-- Projects -->
+  <div class="projects-wrapper">
+    <div class="container" id="projects">
+      <h2 class="text-center">Projects</h2>
+      <div class="row text-center">
+        <div id="first-card" class="col-12 col-md-6 col-xl-4 project-thumbnail">
+          <div class="front">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex flex-row justify-content-between">
+                  <a class="btn btn-outline-success" target="_blank" href="http://www.krsna.us/">Live site</a>
+                  <button class="btn btn-outline-info card-toggle">Technologies</button>
+                </div>
+              </div>
+              <div class="card-block">
+                <h5 class="card-title">Krsna.US</h5>
+                <p class="card-text">A collection of searchable movies, songs, magazines and more. Log in with Facebook
+                  or Google to create and save playlists
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/DadImScared/PureBhaktiCrawler" target="_blank" class="btn btn-primary">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                  View on github
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="back container">
+            <div class="row">
+              <div class="col-6">
+                <h5><i class="icon-javascript"></i> Front-end</h5>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-info">
+                    <span><i class="icon-reactjs"></i> React</span>
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    <span><i class="icon-reactjs"></i>  Redux</span>
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    <span><i class="icon-bootstrap"></i> Bootstrap 4</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <h5><i class="icon-python"></i>Back-end</h5>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-info">Flask</li>
+                  <li class="list-group-item list-group-item-info">SQLite</li>
+                  <li class="list-group-item list-group-item-info">Peewee</li>
+                  <li class="list-group-item list-group-item-info">Flask-RESTFul</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 project-thumbnail">
+          <div class="front">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex flex-row justify-content-between">
+                  <a class="btn btn-outline-success" target="_blank" href="http://purebhakti.tv/">Live site</a>
+                  <span class="btn card-toggle">Technologies</span>
+                </div>
+              </div>
+              <div class="card-block">
+                <h5 class="card-title">PureBhaktiTV</h5>
+                <p class="card-text">Revamped client frontend with a mobile-first approach, resulting in greatly improved website traffic.</p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" href="https://github.com/DadImScared/PureBhaktiTv" class="btn btn-primary">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                  View on github
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="back container">
+            <div class="row">
+              <div class="col-12">
+                <h5><i class="icon-javascript"></i> Front-end</h5>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-info">
+                    <span><i class="icon-jquery"></i>  jquery</span>
+                  </li>
+
+                  <li class="list-group-item list-group-item-info">
+                    <span><i class="icon-bootstrap"></i> Bootstrap 4</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 project-thumbnail">
+          <div class="front">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex flex-row justify-content-between">
+                  <a class="btn btn-outline-success" target="_blank" href="http://madhavi.pythonanywhere.com/">Live site</a>
+                  <span class="btn btn-outline-info card-toggle">Technologies</span>
+                </div>
+              </div>
+              <div class="card-block">
+                <h5 class="card-title">RelaxGville</h5>
+                <p class="card-text">Converted an older, WordPress website into a modern React application. Included a simple CMS to allow the client ease of editing.
+                </p>
+              </div>
+              <div class="card-footer">
+                <a href="https://github.com/DadImScared/Madhavi" target="_blank" class="btn btn-primary">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                  View on github
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="back container">
+            <div class="row">
+              <div class="col-6">
+                <h5><i class="icon-javascript"></i> Front-end</h5>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-info">
+                    <span><i class="icon-reactjs"></i> React</span>
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    <span><i class="icon-css3"></i> CSS3</span>
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    <span><i class="icon-bootstrap"></i> Bootstrap 4</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <h5><i class="icon-python"></i> Back-end</h5>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-info">
+                    Flask
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    Peewee
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    SQLite
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    flask-RESTFul
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 project-thumbnail">
+          <div class="front">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex flex-row justify-content-between">
+                  <a class="btn btn-outline-success" target="_blank" href="http://www.sevateams.com/">Live site</a>
+                  <span class="btn btn-outline-info card-toggle">Technologies</span>
+                </div>
+              </div>
+              <div class="card-block">
+                <h5 class="card-title">Seva Teams</h5>
+                <p class="card-text">A simple web application to manage a number of volunteers, and documents with various work flows.</p>
+              </div>
+              <div class="card-footer">
+                <a target="_blank" href="https://github.com/DadImScared/FileUploader" class="btn btn-primary">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="back container">
+            <div class="row">
+              <div class="col-6">
+                <h5><i class="icon-javascript"></i> Front-end</h5>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-info">
+                    <span><i class="icon-jquery"></i> jQuery</span>
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    <span><i class="icon-bootstrap"></i> Bootstrap 4</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <h5><i class="icon-python"></i> Back-end</h5>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-info">
+                    Flask
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    peewee
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    SQLite
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 project-thumbnail">
+          <div class="front">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex flex-row justify-content-end">
+                  <span class="btn btn-outline-info card-toggle">Technologies</span>
+                </div>
+              </div>
+              <div class="card-block">
+                <h5 class="card-title">This website</h5>
+                <p class="card-text">Designed and coded by me.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                  View on github
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="back container">
+            <div class="row">
+              <div class="col-12">
+                <h5><i class="icon-javascript"></i> Front-end</h5>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-info">
+                    <span><i class="icon-jquery"></i> jQuery</span>
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    <span><i class="icon-bootstrap"></i> Bootstrap 4</span>
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    <span><i class="icon-css3"></i> CSS3</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4 project-thumbnail">
+          <div class="front">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex flex-row justify-content-between">
+                  <a class="btn btn-outline-success" href="http://www.krsna.us/">Live site</a>
+                  <span class="btn btn-outline-info card-toggle">Technologies</span>
+                </div>
+              </div>
+              <div class="card-block">
+                <h5 class="card-title">Build A Champion</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+              </div>
+              <div class="card-footer">
+                <a href="#" class="btn btn-primary">
+                  <i class="fa fa-github" aria-hidden="true"></i>
+                  View on github
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="back card container">
+            <div class="row">
+              <div class="col-12">
+                <h5><i class="icon-javascript"></i> Front-end</h5>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-info">
+                    <span><i class="icon-reactjs"></i> React</span>
+                  </li>
+                  <li class="list-group-item list-group-item-info">
+                    <span><i class="icon-bootstrap"></i> Bootstrap</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- /Projects -->
+
+  <!-- Contact -->
+  <div id="contactWrapper">
+    <div class="container py-3" id="contact">
+      <h3 class="text-white text-center">Contact</h3>
+      <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3">
+          <form method="POST" class="form" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <div class="form-group py-2">
+              {{ render_field(form.email, class="form-control", type="email", id="email") }}
+            </div>
+            <div class="form-group">
+              {{ render_field(form.message, class="form-control large-area", id="message") }}
+            </div>
+            <button id="submit" class="btn btn-secondary col-xs-12">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Contact -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container d-flex justify-content-between">
+      	&copy; Matthew Bernheimer 2017
+    </div>
+  </footer>
+  <!-- /Footer -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.4/jquery.sticky.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-Flip/1.1.2/jquery.flip.js"></script>
+  <script>
+    var $myStickyNav = $('#my-sticky-nav');
+    var $projectThumbs = $('.project-thumbnail');
+    $('body').scrollspy({ target: '#navWrapper', offset: 100 });
+    $myStickyNav.sticky({topSpacing:0, zIndex: "1000",  responsiveWidth: true, center: true });
+    $projectThumbs.flip({ trigger: "manual", forceWidth: true, forceHeight: true, speed: 700});
+    $('.card-toggle').hover(function() {
+      $(this).parents('.project-thumbnail').flip(true)
+    });
+    $projectThumbs.mouseleave(function() {
+      //$(this).children('.back.container').children('.row').css({ visibility: 'hidden' });
+      $(this).children('.back.container').children('.row').removeClass('my-animation');
+      $(this).flip(false);
+    });
+    $projectThumbs.on('flip:done', function() {
+      if ($(this).data('flip-model').isFlipped) {
+        $(this).children('.back.container').children('.row').addClass('my-animation');
+      }
+    });
+    $('#arrowWrap, .bounce').click(function() {
+      document.getElementById('projects').scrollIntoView();
+    })
+    $('.nav-link').click(function(e) {
+      e.preventDefault();
+      document.getElementById(e.target.text === "About" ? "intro":e.target.text.toLowerCase()).scrollIntoView();
+    })
+  </script>
+  {% if scroll %}
+    <script>
+        document.getElementById('{{ scroll }}').scrollIntoView();
+        // or
+        //document.location.hash = '#' + '{{ scroll }}';
+    </script>
+  {% endif %}
+  </body>
+</html>
