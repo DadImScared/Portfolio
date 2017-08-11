@@ -5,7 +5,6 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-mfizz/2.4.1/font-mfizz.css" rel="stylesheet">
@@ -14,17 +13,29 @@
   </head>
   <body data-spy="scroll" data-offset="10" data-target="#mavWrapper">
   <!-- Intro  -->
+  {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <div id="messages" class="">
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }} alert-dismissible fade show mb-0 text-center" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">x</button>
+                        <span>{{ message }}</span>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endif %}
+    {% endwith %}
     <div id="intro" class="d-flex flex-column justify-content-around align-items-center">
       <div class="pt-2 color-wby container text-center">
         <div id="self-picture"></div>
-        <p class="text-center">Hi, I'm Matthew. I am a full stack developer from Gainesville, Florida.</p>
-        <h5 class="text-center pb-2">Technologies used: </h5>
-        <h6 class="text-center">Front-end: </h6>
-        <p class="text-center">JavaScript, React/Redux, jQuery, Bootstrap 3/4, HTML5, CSS3.</p>
-        <h6 class="text-center">Utility:</h6>
-        <p>Git, Webpack.</p>
-        <h6 class="text-center">Back-end: </h6>
-        <p class="text-center">SQL, Python, Flask, Jinja2, Peewee, Scrapy, Beautiful Soup.</p>
+        <p>Hi, I'm Matthew. I am a full stack developer from Gainesville, Florida</p>
+        <h5 class="pb-2">Tooling: </h5>
+        <h6>Front-end: </h6>
+        <p>JavaScript, React/Redux, jQuery, Bootstrap 3/4, HTML5, CSS3</p>
+        <h6>Back-end: </h6>
+        <p>SQL, Python, Flask, Jinja2, Peewee, Scrapy, Beautiful Soup</p>
+        <h6>Utility:</h6>
+        <p>Git, Webpack</p>
       </div>
       <div id="navWrapper">
         <ul id="my-sticky-nav" class="nav justify-content-center nav-pills">
@@ -76,13 +87,13 @@
                 <h5><i class="icon-javascript"></i> Front-end</h5>
                 <ul class="list-group">
                   <li class="list-group-item list-group-item-info">
-                    <span><i class="icon-reactjs"></i> React</span>
+                    <span>React</span>
                   </li>
                   <li class="list-group-item list-group-item-info">
-                    <span><i class="icon-reactjs"></i>  Redux</span>
+                    <span>Redux</span>
                   </li>
                   <li class="list-group-item list-group-item-info">
-                    <span><i class="icon-bootstrap"></i> Bootstrap 4</span>
+                    <span> Bootstrap 4</span>
                   </li>
                 </ul>
               </div>
@@ -125,11 +136,11 @@
                 <h5><i class="icon-javascript"></i> Front-end</h5>
                 <ul class="list-group">
                   <li class="list-group-item list-group-item-info">
-                    <span><i class="icon-jquery"></i>  jquery</span>
+                    <span>jQuery</span>
                   </li>
 
                   <li class="list-group-item list-group-item-info">
-                    <span><i class="icon-bootstrap"></i> Bootstrap 4</span>
+                    <span>Bootstrap 4</span>
                   </li>
                 </ul>
               </div>
@@ -164,13 +175,13 @@
                 <h5><i class="icon-javascript"></i> Front-end</h5>
                 <ul class="list-group">
                   <li class="list-group-item list-group-item-info">
-                    <span><i class="icon-reactjs"></i> React</span>
+                    <span>React</span>
                   </li>
                   <li class="list-group-item list-group-item-info">
-                    <span><i class="icon-css3"></i> CSS3</span>
+                    <span>CSS3</span>
                   </li>
                   <li class="list-group-item list-group-item-info">
-                    <span><i class="icon-bootstrap"></i> Bootstrap 4</span>
+                    <span>Bootstrap 4</span>
                   </li>
                 </ul>
               </div>
@@ -221,10 +232,10 @@
                 <h5><i class="icon-javascript"></i> Front-end</h5>
                 <ul class="list-group">
                   <li class="list-group-item list-group-item-info">
-                    <span><i class="icon-jquery"></i> jQuery</span>
+                    <span>jQuery</span>
                   </li>
                   <li class="list-group-item list-group-item-info">
-                    <span><i class="icon-bootstrap"></i> Bootstrap 4</span>
+                    <span>Bootstrap 4</span>
                   </li>
                 </ul>
               </div>
@@ -271,13 +282,13 @@
                 <h5><i class="icon-javascript"></i> Front-end</h5>
                 <ul class="list-group">
                   <li class="list-group-item list-group-item-info">
-                    <span><i class="icon-jquery"></i> jQuery</span>
+                    <span>jQuery</span>
                   </li>
                   <li class="list-group-item list-group-item-info">
-                    <span><i class="icon-bootstrap"></i> Bootstrap 4</span>
+                    <span>Bootstrap 4</span>
                   </li>
                   <li class="list-group-item list-group-item-info">
-                    <span><i class="icon-css3"></i> CSS3</span>
+                    <span>CSS3</span>
                   </li>
                 </ul>
               </div>
@@ -311,10 +322,10 @@
                 <h5><i class="icon-javascript"></i> Front-end</h5>
                 <ul class="list-group">
                   <li class="list-group-item list-group-item-info">
-                    <span><i class="icon-reactjs"></i> React</span>
+                    <span>React</span>
                   </li>
                   <li class="list-group-item list-group-item-info">
-                    <span><i class="icon-bootstrap"></i> Bootstrap</span>
+                    <span>Bootstrap</span>
                   </li>
                 </ul>
               </div>
@@ -341,7 +352,8 @@
             <div class="form-group">
               {{ render_field(form.message, class="form-control large-area", id="message") }}
             </div>
-            <button id="submit" class="btn btn-secondary col-xs-12">Submit</button>
+            <input id="thing2" type="text" value="" autoComplete="nope" tabIndex="-1"/>
+            <button id="submit" class="btn btn-success col-xs-12">Submit</button>
           </form>
         </div>
       </div>
@@ -384,11 +396,15 @@
     });
     $('#arrowWrap, .bounce').click(function() {
       document.getElementById('projects').scrollIntoView();
-    })
+    });
     $('.nav-link').click(function(e) {
       e.preventDefault();
       document.getElementById(e.target.text === "About" ? "intro":e.target.text.toLowerCase()).scrollIntoView();
-    })
+    });
+    $('.form').submit(function(e) {
+      document.getElementById('phone').value ?
+      e.preventDefault():null
+    });
   </script>
   {% if scroll %}
     <script>

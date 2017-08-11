@@ -1,7 +1,6 @@
-from flask import Flask, render_template, redirect, url_for, request
+from flask import Flask, render_template, redirect, url_for, request, flash
 from flask_mail import Mail, Message
 from threading import Thread
-from functools import wraps
 from forms import ContactForm
 import config
 
@@ -48,6 +47,7 @@ def index():
                 text_body="Email: {} \n"
                           "Message: {}".format(form.email.data, form.message.data)
             )
+            flash("Message sent!", "success")
             return redirect(url_for('index'))
         else:
             return render_template('index.html', form=form, scroll='contact')
@@ -55,4 +55,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()

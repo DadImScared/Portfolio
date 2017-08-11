@@ -200,3 +200,15 @@ animation-duration:2s;
 	40% {transform: translateY(-30px);}
 	60% {transform: translateY(-15px);}
 }
+
+#thing2 {
+    display: none;
+}
+
+#messages {
+    width: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    z-index: 1500;
+}
